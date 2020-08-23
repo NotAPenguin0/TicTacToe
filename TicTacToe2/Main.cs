@@ -12,7 +12,14 @@
                 winner = game.PlayTurn();
             }
 
-            System.Console.WriteLine($"Game Over! Player: {winner} won!");
+            if (winner == PlayerId.None)
+            {
+                System.Console.WriteLine("Game Over! The game ended in a draw.");
+            }
+            else
+            {
+                System.Console.WriteLine($"Game Over! Player: {winner} won!");
+            }
         }
     }
 }

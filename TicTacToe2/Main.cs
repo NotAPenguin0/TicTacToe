@@ -12,6 +12,9 @@
                 winner = game.PlayTurn();
             }
 
+            // Display final board before exiting
+            game.Display();
+
             if (winner == PlayerId.None)
             {
                 System.Console.WriteLine("Game Over! The game ended in a draw.");

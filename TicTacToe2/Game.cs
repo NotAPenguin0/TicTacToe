@@ -178,7 +178,7 @@ namespace TicTacToe
             }
         }
 
-        private void Display()
+        public void Display()
         {
             for (uint y = 0; y < board.Height; ++y)
             {
